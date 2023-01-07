@@ -1,4 +1,4 @@
-**Create a database of Ramen restaurant - Bankara Ramen** , use SQL language
+Create a database of Ramen restaurant - Bankara Ramen , use SQL language
 
 https://replit.com/@tttontann/SQLHomeworkBatch6#main.sql
 
