@@ -1,4 +1,155 @@
-Create a database of Ramen restaurant - Bankara Ramen
-Use SQL 
+**Create a database of Ramen restaurant - Bankara Ramen** , use SQL language
 
 https://replit.com/@tttontann/SQLHomeworkBatch6#main.sql
+
+
+-- create (dimension) table --
+
+create table ramen_menu (
+  ramen_id int primary key,
+  ramen_name TEXT,
+  ramen_price real
+);
+
+insert into ramen_menu values
+  (1, 'Bankara Original', 190),
+  (2, 'Kakuni Bankara', 275),
+  (3, 'Chashu Men', 265),
+  (4, 'Karenegi Bankara', 225),
+  (5, 'Chuuka Soba', 195);
+
+create table toppings(
+  topping_id int primary key,
+  topping_name text,
+  topping_price real
+);
+
+insert into toppings values
+(0, 'no topping', 0),
+(1, 'Shoyu egg', 30),
+(2, 'Onsen egg', 30),
+(3, 'Chashu', 85),
+(4, 'Wakame', 35),
+(5, 'Kakuni', 95),
+(6, 'Buta Slide', 90);
+
+create table member(
+  member_id int primary key,
+  member_name text,
+  member_level_id text,
+  member_birthmonth text
+);
+
+insert into member values
+  (0, 'no member', 0, null),
+  (1, 'Shark', '1', 'October'),
+  (2, 'Sam', '1', 'March'),
+  (3, 'Pupu', '2', 'February'),
+  (4, 'Pao', '3', 'February'),
+  (5, 'Tan', '4', 'November'),
+  (6, 'Meiweiei', '4', 'January');
+
+create table member_levels(
+  member_level_id int primary key,
+  member_level text,
+  member_level_discount real
+);
+
+insert into member_levels values
+  (0, 'No Member', '0%'),
+  (1, 'Silver', '5%'),
+  (2, 'Gold', '10%'),
+  (3, 'Platinum', '15%'),
+  (4, 'Diamond', '20%') ;
+
+create table member_status(
+  mb_status_id text,
+  mb_status iext
+);
+
+insert into member_status values
+  ('N', 'No'),
+  ('Y', 'Yes');
+
+-- create fact table --
+create table orders(
+  order_id int,
+  order_date date,
+  ramen_id int,
+  quantity int,
+  topping_id int,
+  member_status TEXT,
+  member_id int
+);
+
+insert into orders values
+  (1, '2022-01-01', 1, 2, 3, 'N', 0),
+  (1, '2022-01-01', 4, 1, 0, 'N', 0),
+  (2, '2022-01-20', 2, 1, 0, 'Y', 6),
+  (3, '2022-02-23', 3, 1, 0, 'Y', 3),
+  (4, '2022-02-15', 2, 2, 1, 'Y', 3),
+  (5, '2022-02-22', 5, 1, 0, 'Y', 2),
+  (6, '2022-02-19', 3, 1, 0, 'Y', 1),
+  (6, '2022-02-19', 4, 1, 6, 'Y', 1),
+  (7, '2022-02-19', 5, 1, 2, 'Y', 5)
+  ;
+------------------------------------------------------------------
+/*.mode column
+.header on
+select * from ramen_menu;
+select * from toppings;
+select * from member;
+select * from member_levels;
+select * from member_status;
+select * from orders;*/
+
+.mode column
+.header on
+create view order_fulltable as
+    select 
+        orders.order_id as 'order',
+        orders.order_date as 'date',
+        ramen_menu.ramen_name as 'menu',
+        orders.quantity as 'qty',
+        toppings.topping_name as 'topping',
+        (ramen_menu.ramen_price+toppings.topping_price)*orders.quantity as 'total',
+        member.member_name as 'member',
+        member_levels.member_level_discount as 'discount',
+        (1-(member_levels.member_level_discount/100.00))*(ramen_menu.ramen_price+toppings.topping_price)*orders.quantity as 'Grand_Total'
+    from orders
+    join ramen_menu on orders.ramen_id = ramen_menu.ramen_id
+    join toppings on orders.topping_id = toppings.topping_id
+    join member on orders.member_id = member.member_id
+    join member_levels on member_levels.member_level_id = member.member_level_id  
+    ;
+
+.mode column
+.header on
+select * from order_fulltable;
+
+.print '     '
+.print 'Q1: Best seller menu'
+select 
+    menu 'Best selling'
+from order_fulltable
+group by menu
+order by sum(qty) desc
+limit 1;
+
+.print '     '
+.print 'Q2: How many dish without topping?'
+select count(menu) 'without topping'
+from order_fulltable
+where topping = 'no topping';
+
+.print '     '
+.print 'Q3: Top spender'
+select 
+    member,
+    sum(Grand_Total) as 'Amount'
+from order_fulltable
+group by member
+order by Amount desc 
+limit 1
+
+;
