@@ -1,4 +1,4 @@
-### This is Kamolchanok's Portfolio ###
+### Kamolchanok's Portfolio ###
 
 This portfolio contains all of my work such as
 
