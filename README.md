@@ -1,13 +1,19 @@
-### Kamolchanok's Portfolio ###
+## Kamolchanok's Portfolio ##
 
 I am interesting in Data Analyst and taking a bootcamp with [Datarockie](https://datarockie.com/).
-In this bootcamp, we've learned about 10 sprint within 4 months.
+In this 4 months bootcamp, we've learned about 10 sprint within 4 months.
 These are my project :
 
-1. SQL  
+1. Spreadsheet
+2. SQL  
    + [Create a database of Ramen Restaurants](https://replit.com/@tttontann/SQLHomeworkBatch6#main.sql)
-2. Python 
+3. R Programming
+4. Python Programming
    + [Create ATM Transaction](https://datalore.jetbrains.com/view/notebook/M2WqL6U37RTJIHxnVQM1Zt)
    + [Create a Pao-Ying-Chub Game](https://datalore.jetbrains.com/view/notebook/fCLJkMA8AGY7xwNpyZUMKj)
-3. Tableau 
-   + [Create a dashboard](https://public.tableau.com/app/profile/tann3621/viz/Dashboard_Batch06/Dashboard1)
+3. Data Visualization
+   + [Tableau](https://public.tableau.com/app/profile/tann3621/viz/Dashboard_Batch06/Dashboard1)
+   + Looker studio (Google Data Studio)
+   + R Programming
+4. Bussiness statistics and analytics
+5. Predictive Modeling and Maachine Learning
