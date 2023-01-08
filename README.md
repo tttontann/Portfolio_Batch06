@@ -2,7 +2,8 @@
 
 This portfolio contains all of my work such as
 
-1. SQL  >> https://replit.com/@tttontann/SQLHomeworkBatch6#main.sql
+1. SQL  >> 
+   https://replit.com/@tttontann/SQLHomeworkBatch6#main.sql
 2. Python 
    + Create ATM Transaction >> https://datalore.jetbrains.com/view/notebook/M2WqL6U37RTJIHxnVQM1Zt
    + Create a Pao-Ying-Chub Game >> https://datalore.jetbrains.com/view/notebook/fCLJkMA8AGY7xwNpyZUMKj
