@@ -1,7 +1,7 @@
 ## Kamolchanok's Portfolio ##
 
 I am interesting in Data Analyst and taking a bootcamp with [Datarockie](https://datarockie.com/).
-In this 4 months bootcamp, we've learned about 10 sprint within 4 months.
+In this 4 months bootcamp, we've learned about skills for Data Analyst/Scienist.
 These are my project :
 
 1. Spreadsheet
