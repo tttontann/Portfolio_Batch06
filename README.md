@@ -18,3 +18,4 @@ These are my project :
    + R Programming
 4. Bussiness statistics and analytics
 5. Predictive Modeling and Machine Learning
+   + Simple ML by sklearn
