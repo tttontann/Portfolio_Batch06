@@ -16,7 +16,7 @@ These are my project :
 6. Data Visualization
    + [Tableau](https://public.tableau.com/app/profile/tann3621/viz/Dashboard_Batch06/Dashboard1)
    + Looker studio (Google Data Studio)
-   + [R Programming[(https://github.com/tttontann/Portfolio_Batch06/blob/main/R%20Data%20Visualization.pdf)
+   + [R Programming](https://github.com/tttontann/Portfolio_Batch06/blob/main/R%20Data%20Visualization.pdf)
 7. Bussiness statistics and analytics
 8. Predictive Modeling and Machine Learning
    + Simple ML by sklearn
