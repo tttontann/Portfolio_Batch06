@@ -13,6 +13,7 @@ These are my project :
    + [Create ATM Transaction](https://datalore.jetbrains.com/view/notebook/M2WqL6U37RTJIHxnVQM1Zt)
    + [Create a Pao-Ying-Chub Game](https://datalore.jetbrains.com/view/notebook/fCLJkMA8AGY7xwNpyZUMKj)
    + [API : Application Programming Interface](https://datalore.jetbrains.com/view/notebook/xIjP2H87Nifm5bbONusJRO)
+   + [Pandas Foundation](https://datalore.jetbrains.com/view/notebook/D1QpeCY7ofI0artsyQuG30)
 6. Data Visualization
    + [Tableau](https://public.tableau.com/app/profile/tann3621/viz/Dashboard_Batch06/Dashboard1)
    + Looker studio (Google Data Studio)
