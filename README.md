@@ -15,7 +15,7 @@ These are my project :
    + [API : Application Programming Interface](https://datalore.jetbrains.com/view/notebook/xIjP2H87Nifm5bbONusJRO)
    + [Pandas Foundation](https://datalore.jetbrains.com/view/notebook/D1QpeCY7ofI0artsyQuG30)
 6. Data Visualization
-   + [Tableau](https://public.tableau.com/app/profile/tann3621/viz/Dashboard_Batch06/Dashboard1)
+   + [Tableau](https://public.tableau.com/views/Batch06_JobforMillenialsvsBabyBoomers/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
    + Looker studio (Google Data Studio)
    + [R Programming](https://github.com/tttontann/Portfolio_Batch06/blob/main/R%20Data%20Visualization.pdf)
 7. Bussiness statistics and analytics
