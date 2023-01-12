@@ -2,7 +2,7 @@
 
 I am interesting in Data Analyst and taking a bootcamp with [Datarockie](https://datarockie.com/).
 In this 4 months bootcamp, we've learned about skills for Data Analyst/Scienist.
-These are my project :
+These are things I've learned and my project :
 
 1. Spreadsheet
 2. SQL  
