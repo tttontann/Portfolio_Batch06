@@ -16,7 +16,7 @@ These are my project :
    + [Pandas Foundation](https://datalore.jetbrains.com/view/notebook/D1QpeCY7ofI0artsyQuG30)
 6. Data Visualization
    + [Tableau](https://public.tableau.com/views/Batch06_JobforMillenialsvsBabyBoomers/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-   + Looker studio (Google Data Studio)
+   + [Looker studio (Google Data Studio)](https://datastudio.google.com/reporting/db8f8981-0fbb-4527-81b7-20e3de430e71)
    + [R Programming](https://github.com/tttontann/Portfolio_Batch06/blob/main/R%20Data%20Visualization.pdf)
 7. Bussiness statistics and analytics
 8. Predictive Modeling and Machine Learning
